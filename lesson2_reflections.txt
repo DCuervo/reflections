@@ -1,0 +1,30 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	When you initialize a repository, git creates a "snapshot" of the 
+	current directory and all of the files within, if any.  A hidden 
+	file is created which will keep track of any commits from this point 
+	on.  Without it, any change to the files will occur but the previous 
+	versions will be lost.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+	The staging area is a section where final changes can be made, which will 
+	stop errors happening related to commits.  If the wrong file is added or 
+	omitted, the staging area will be the place to check before actually 
+	finalizing the commit.  Doing so will be a good check that everything has 
+	been updated properly.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
