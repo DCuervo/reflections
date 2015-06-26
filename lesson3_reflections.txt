@@ -13,7 +13,14 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    Being able to manually pull from the GitHub remote repository allows 
+	the user to know how up-to-date the local repository is.  If Git 
+	automatically performed a pull to stay up-to-date, the local 
+	repository would change without the user knowing which updates 
+	occurred, and maybe even without knowing that it was updated at all.  
+	If the user is working on a file and stops, the automatic update may 
+	change the work on the local repository and lose the information, 
+	essentially reverting it back to a previous version.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
