@@ -18,13 +18,61 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+	The staging area is the last step before making a commit, so it is the 
+	perfect place to check that everything has been done correctly and with a 
+	purpose.  At the staging area point, checking the changes made can make 
+	commits more efficient.  Comparing to the working directory will show the 
+	changes as you make them: change some code, place it on the staging area, 
+	continue changing code, and compare to keep track of changes and 
+	progress.  When ready to make a commit, comparing the staging area with 
+	the last commit will show the over-all differences.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	Branches help to create different versions with separate purposes or 
+	functionalities.  A branch can be used to experiment on code without 
+	ruining the current progress done.   If the experimental changes work, the 
+	branch can be used to expand the main branch or it can be merged with any 
+	updated version of the master branch.  If the changes fail, the branch can 
+	be discarded without worry of losing any valuable data.  If a working 
+	version of code is made, branches can be used to have multiple versions 
+	with major differences and purposes.  The master branch can be the 
+	original, working code which can be updated and improved.  The other 
+	branches can be changes such as language changes, different settings, 
+	different looks, etc...
+
 How do the diagrams help you visualize the branch structure?
+
+	A diagram is the best physical representation of the 
+	intricate connections of the many possible branches that 
+	can be created.  In a way, it is much like a decision 
+	tree which can veer off in a completely different line 
+	and possible merge with a later instance.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	Merging two branches will compare each of the files in one branch to the 
+	corresponding file in the other branch.  The differences in the files will 
+	be noted and Git will use some logic to determine which changes will be 
+	kept.  If a line was deleted in either branch, the line will be deleted in 
+	the merged file.  If a line was added in either branch, the line will be 
+	added to the merged file.  In the diagram, the two branches join, but it 
+	is the Master branch that keeps the name since that was the current branch 
+	at the moment of the merge.  The second branch can stay, but it seems like 
+	good practice to delete the name of it to clear up the log.  The commits 
+	from that branch will still be available in the log, although special care 
+	will be needed if trying to make any comparisons between commits while the 
+	two branches were independent.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+	Using Git's automatic merging, changes between two different versions of 
+	a file will be brought to attention, allowing for comparison of two 
+	different but related blocks of code.  It can, however, overlook the 
+	importance of different parts if one file eliminates something essential 
+	for the other.  There is still a need for discussion before finalizing a 
+	merge in order to add the important changes from both versions and 
+	removing the obsolete material that was eliminated.
