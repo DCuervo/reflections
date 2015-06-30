@@ -44,12 +44,40 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    It is easier to remember what the file is and does when looking at a 
+	known state or version.  Nothing new or hidden would confuse or 
+	mislead the author.  The inputs, outputs, and procedures should be 
+	easy to remember.  Being able to check the differences between the old 
+	known version and the new updated version will show the progress made 
+	by others.  It will also allow for the possibility to stop any changes 
+	that are incorrect overall.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    To collaborate using only Git, everyone involved would need to have it 
+	installed in their local machine.  The repositories would need to be 
+	shared through a network or set up in a local storage unit for everyone 
+	to access.  Hardware could be used, but it would require a lot of passing 
+	and updating of the physical storage unit.
+	To collaborate using only GitHub, everyone involved would need to have an 
+	account on GitHub.  A main repository would be made and everyone would be 
+	added to it.  Everyone could check what changes and versions there are 
+	available.  The difficult part would be to edit and test the projects if 
+	the files require more intricate programs to run.
+	To collaborate without either method, everyone would need to share 
+	folders through a network or have physical hardware to pass along.  The 
+	project would need to be saved often, detailing milestones along the 
+	lifetime of the project.  Everyone could work on it individually, but 
+	would have to manually check for changes in the files in detail.
+	The easiest method is to use Git and GitHub simultaneously in order to 
+	reduce the need for passing of hardware.  It would also allow for 
+	multiple version to occur and be worked on without fear of losing a 
+	working version.  Changes could be found easily.
+	Not using Git and GitHub, or any type of version control, make working on 
+	a project difficult, exponentially in creasing the difficulty when adding 
+	multiple authors.  Some versions may get overwritten, lost, or multiplied 
+	due to bad organization and tracking of files.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
